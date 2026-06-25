@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/new-logo.svg" />
+    <!-- In public/index.html -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Parisienne&family=Allura&family=Mr+De+Haviland&family=Sacramento&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPluma</title>
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Add this script before your main script -->
+    <script>
+      window.global = window;
+      window.process = { env: {} };
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
